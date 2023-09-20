@@ -88,7 +88,7 @@ openEditForm(data: any) {
 }
 
 
-deleteEmployee(id: number) {
+deletePurchase(id: number) {
    this._purchaseService.deletePurchase(id).subscribe({
      next: (res) => {
        this._coreService.openSnackBar('Purchase deleted!', 'done');
